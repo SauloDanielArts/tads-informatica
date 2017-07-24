@@ -8,66 +8,79 @@
     <title>TADS - Informática</title>
   </head>
 
-  <body>
+  <body><!-- =============================================================== -->
 
-<!--
-Banner =========================================================================
--->
+    <div class = "container">
+      <!--
+      Barra de navegação =======================================================
+      -->
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-default">
 
-<!--
-Menu Principal =================================================================
--->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Loja de Informática</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+              <li><a href="index.html"><b>INÍCIO</b></a></li>
+              <li><a href="saldao.html"><b>SALDÃO</b></a></li>
+              <li><a href="promocoes.html"><b>PROMOÇÕES</b></a></li>
+              <li><a href="lançamentos.html"><b>LANÇAMENTOS</b></a></li>
+              <li><a href="produtos.html"><b>PRODUTOS</b></a></li>
+              <li><a href="televendas.html"><b>TELEVENDAS</b></a></li>
+              <li><a href="contato.html"><b>CONTATO</b></a></li>
+              </ul>
+            </div>
+          </nav>
+
+        </div>
+      </div>
+
+      <!--
+      Barra de busca ===========================================================
+      -->
+      <div class="row">
+       <div class="col-md-12">
+        <nav class="navbar navbar-inverse">
+
+          <div class="col-md-1">
+            <h3><span class="glyphicon glyphicon-phone-alt" style="color:white"></span></h3>
+          </div>
+
+          <div class="col-md-4">
+            <p style="position: absolute; top: 22px;  color: white; font-size: 120%">Natal: (84) 2014-3232</p>
+          </div>
 
 
-<!--
-Rodapé =========================================================================
--->
+         <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="O que você procura?" size="20">
+            </div>
+            <button type="submit" class="btn btn-default">Buscar</button>
+         </form>
 
-  <div class="row">
-     <div class="col-md-12">
-        <nav class="navbar navbar-default">
-
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Loja de Informática</a>
-    </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="#"><b>INÍCIO</b></a></li>
-        <li><a href="#"><b>SALDÃO</b></a></li>
-        <li><a href="#"><b>PROMOÇÕES</b></a></li>
-        <li><a href="#"><b>LANÇAMENTOS</b></a></li>
-        <li><a href="#"><b>PRODUTOS</b></a></li>
-        <li><a href="#"><b>TELEVENDAS</b></a></li>
-        <li><a href="#"><b>CONTATO</b></a></li>
-      </ul>
-    </div>
-    </nav>
-
- <div class="row">
-  <div class="col-md-12">
-   <nav class="navbar navbar-inverse">
-    <form class="navbar-form navbar-right" role="search">
-       <div class="form-group">
-       <input type="text" class="form-control" placeholder="O que você procura?" size="20">
+         </nav>
        </div>
-       <button type="submit" class="btn btn-default">Buscar</button>
-    </form>
-    </nav>
-  </div>
-  </div>
+       </div>
 
-   <div class="row">
-     <div class="col-md-12">
-      <p class="navbar-text"><h1>PRODUTOS EM DESTAQUE</h1></p> <br>
-      <hr>
-     </div>
-   </div>
+    </div>
+
+    <div class = "container">
+      <div class="col-md-12">
+        <h1 class="navbar-text"><center>PRODUTOS EM DESTAQUES</ceter></h1>
+      </div>
+    </div>
+
+  <!-- ------------------------------------------------------------------------>
+
 
 <div class="row">
   <div class="col-md-4">
@@ -271,6 +284,6 @@ Rodapé ========================================================================
 	</div>
 </div>
 
-  </body>
+ </body><!-- =============================================================== -->
 
 </html>
