@@ -22,23 +22,9 @@ function validateForm() {
       validar = false;
     }
     if (validar){
-      var elemento = getElementById("sucesso")
-      temp_ini = get.Milliseconds();
-      elemento.style.display = "block";
-      temp_fin = get.Milliseconds();
-      while(temp_fin - temp_ini < 30000){
-        temp_fin = get.Milliseconds();
-      }
-      elemento.style.display = "none";
+      alert("Contato enviado com sucesso!");
     }else{
-      var elemento2 = getElementById("aviso")
-      temp_ini = get.Milliseconds();
-      elemento2.style.display = "block";
-      temp_fin = get.Milliseconds();
-      while(temp_fin - temp_ini < 30000){
-        temp_fin = get.Milliseconds();
-      }
-      elemento2.style.display = "none";
+      alert("Não pode haver campos em branco!");
     }
     return validar;
 }
