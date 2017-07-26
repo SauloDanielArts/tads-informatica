@@ -16,6 +16,8 @@
 
     <!-- Custom CSS -->
     <link href="css/shop-homepage.css" rel="stylesheet">
+    <!-- Script criado -->
+    <script src="js/script.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -60,7 +62,7 @@
                       <a href="#"><b>PRODUTOS</b></a>
                     </li>
                     <li>
-                      <a href="#"><b>TELEVENDAS</b></a>
+                      <a href="televendas.html"><b>TELEVENDAS</b></a>
                     </li>
                     <li>
                       <a href="contato.html"><b>CONTATO</b></a>
@@ -90,23 +92,23 @@
                  </div>
                  <div style="height: 550px; width: 470px; background-color: #f2f2f2; border-radius: 5px; border-width: 1px; border-style: solid; border-color: #cccccc";>
                      <div style="margin-top:10px;padding:10px">
-                 <form class="form-inline">
+                 <form name="contato" class="form-inline" onsubmit="validateForm()">
                  <div class="form-group">
                      Nome:<br>
-                     <input type="text" class="form-control" id="exampleInputName2">
+                     <input type="text" class="form-control" name="nome">
                  </div>
                  <div class="form-group">
                      Email:<br>
-                     <input type="email" class="form-control" id="exampleInputEmail2">
+                     <input type="email" class="form-control" name="email">
                  </div></form><br>
                  <form class="form-inline">
                  <div class="form-group">
                      Telefone<br>
-                     <input type="text" class="form-control" id="exampleInputName2">
+                     <input type="text" class="form-control" name="telefone">
                  </div>
                  <div class="form-group">
                      Celular:<br>
-                     <input type="text" class="form-control" id="exampleInputName2">
+                     <input type="text" class="form-control" name="celular">
                  </div></form><br>
                  Assunto<br>
                  <input type="text" class="form-control" style="width: 400px;">
@@ -161,6 +163,12 @@
 
     </div>
     <!-- /.container -->
+    <div class="alert alert-success" id="sucesso" style="display:none;position:fixed;top:10%;left:40%">
+      <strong>Pronto!</strong> Seus dados foram enviados com sucesso.
+    </div>
+    <div class="alert alert-warning" id="aviso" style="display:none;position:fixed;top:10%;left:40%">
+      <strong>Atenção!</strong> Nenhum dos campos pode ficar vazio.>
+    </div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
