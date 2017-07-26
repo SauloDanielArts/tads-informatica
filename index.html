@@ -1,289 +1,289 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
-  <head>
+<head>
+
     <meta charset="utf-8">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <meta name="descripition" content="Loja vitual da TADS - Informática.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Loja vitual da TADS - Informática.">
+    <meta name="author" content="">
+
     <title>TADS - Informática</title>
-  </head>
 
-  <body><!-- =============================================================== -->
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <div class = "container">
-      <!--
-      Barra de navegação =======================================================
-      -->
-      <div class="row">
-        <div class="col-md-12">
-          <nav class="navbar navbar-default">
+    <!-- Custom CSS -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
 
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">Loja de Informática</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">TADS - Informática</a>
             </div>
-
+            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-              <li><a href="index.html"><b>INÍCIO</b></a></li>
-              <li><a href="saldao.html"><b>SALDÃO</b></a></li>
-              <li><a href="promocoes.html"><b>PROMOÇÕES</b></a></li>
-              <li><a href="lançamentos.html"><b>LANÇAMENTOS</b></a></li>
-              <li><a href="produtos.html"><b>PRODUTOS</b></a></li>
-              <li><a href="televendas.html"><b>TELEVENDAS</b></a></li>
-              <li><a href="contato.html"><b>CONTATO</b></a></li>
-              </ul>
+                <ul class="nav navbar-nav">
+                    <li>
+                      <a href="index.html"><b>INÍCIO</b></a>
+                    </li>
+                    <li>
+                      <a href="saldao.html"><b>SALDÃO</b></a>
+                    </li>
+                    <li>
+                      <a href="promocoes.html"><b>PROMOÇÕES</b></a>
+                    </li>
+                    <li>
+                      <a href="lançamentos.html"><b>LANÇAMENTOS</b></a>
+                    </li>
+                    <li>
+                      <a href="produtos.html"><b>PRODUTOS</b></a>
+                    </li>
+                    <li>
+                      <a href="televendas.html"><b>TELEVENDAS</b></a>
+                    </li>
+                    <li>
+                      <a href="contato.html"><b>CONTATO</b></a>
+                    </li>
+                </ul>
             </div>
-          </nav>
-
+            <!-- /.navbar-collapse -->
         </div>
-      </div>
+        <!-- /.container -->
+    </nav>
 
-      <!--
-      Barra de busca ===========================================================
-      -->
-      <div class="row">
-       <div class="col-md-12">
-        <nav class="navbar navbar-inverse">
+    <!-- Page Content -->
+    <div class="container">
 
-          <div class="col-md-1">
-            <h3><span class="glyphicon glyphicon-phone-alt" style="color:white"></span></h3>
-          </div>
+        <div class="row">
 
-          <div class="col-md-4">
-            <p style="position: absolute; top: 22px;  color: white; font-size: 120%">Natal: (84) 2014-3232</p>
-          </div>
-
-
-         <form class="navbar-form navbar-right" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="O que você procura?" size="20">
+            <div class="col-md-3">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#produto-list">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <span class="navbar-brand lead" style="clear:left">Produtos</span>
+              </div>
+                <div class="collapse navbar-collapse" id="produto-list">
+                  <ul class="list-group nav navbar-nav" style="list-style-type:none;clear:left  ">
+                  <li style="clear:left">
+                    <a href="#" class="list-group-item" style="display:block;width:265px">Category 1</a>
+                  </li>
+                  <li style="clear:left">
+                    <a href="#" class="list-group-item" style="display:block;width:265px">Category 2</a>
+                  </li>
+                  <li style="clear:left">
+                    <a href="#" class="list-group-item" style="display:block;width:265px">Category 3</a>
+                  </li>
+                  </ul>
+                </div>
             </div>
-            <button type="submit" class="btn btn-default">Buscar</button>
-         </form>
 
-         </nav>
-       </div>
-       </div>
+            <div class="col-md-9">
+
+                <div class="row carousel-holder">
+
+                    <div class="col-md-12">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="slide-image" src="http://placehold.it/800x300" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="http://placehold.it/800x300" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="http://placehold.it/800x300" alt="">
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$24.99</h4>
+                                <h4><a href="#">First Product</a>
+                                </h4>
+                                <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">15 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$64.99</h4>
+                                <h4><a href="#">Second Product</a>
+                                </h4>
+                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">12 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$74.99</h4>
+                                <h4><a href="#">Third Product</a>
+                                </h4>
+                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">31 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$84.99</h4>
+                                <h4><a href="#">Fourth Product</a>
+                                </h4>
+                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">6 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$94.99</h4>
+                                <h4><a href="#">Fifth Product</a>
+                                </h4>
+                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">18 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <h4><a href="#">Like this template?</a>
+                        </h4>
+                        <p>If you like this template, then check out <a target="_blank" href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this tutorial</a> on how to build a working review system for your online store!</p>
+                        <a class="btn btn-primary" target="_blank" href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">View Tutorial</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
+    <!-- /.container -->
 
-    <div class = "container">
-      <div class="col-md-12">
-        <h1 class="navbar-text"><center>PRODUTOS EM DESTAQUES</ceter></h1>
-      </div>
-    </div>
+    <div class="container">
 
-  <!-- ------------------------------------------------------------------------>
+        <hr>
 
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </footer>
 
-<div class="row">
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <a href="">
-        <img src="imagens/produtos/atari-flashback.jpg" alt="Lights" style="width:100%">
-        <div class="caption">
-          <p><b>ATARI FLASHBACK 7 C/101 JOGOS NA MEMÓRIA</b></p>
-          <p><h3><font color = "#cc0000">R$499,00</font></h3></p>
-          <p>10x de R$49,90</p>
-        </div>
-      </a>
     </div>
-  </div>
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <a href="">
-        <img src="imagens/produtos/notebookintel.jpg" alt="Nature" style="width:100%">
-        <div class="caption">
-          <p><b>Notebook Intel Dual Core HD de 1TB</b></p>
-          <p><h3><font color = "#cc0000">R$1299,00</h3></font></p>
-          <p>10x de R$129,90</p>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <a href="">
-        <img src="imagens/produtos/MACBOOKAIR.jpg" alt="Fjords" style="width:100%">
-        <div class="caption">
-          <p><b>Mac Book Air</b></p>
-          <p><h3><font color = "#cc0000">Por R$3120,00</h3></font></p>
-          <p>10x de R$312,00</p>
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <a href="">
-        <img src="imagens/produtos/xbox.jpg" alt="Lights" style="width:100%">
-        <div class="caption">
-          <p><b>Xbox 360</b></p>
-          <p><h3><font color = "#cc0000">Por R$699,00</h3></font></p>
-          <p>10x de R$69,90</p>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <a href="">
-        <img src="imagens/produtos/impressorahp.jpg" alt="Nature" style="width:100%">
-        <div class="caption">
-          <p><b>Multifuncional HP Deskjet Ink Advantage 2136 Jato de Tinta</b></p>
-          <p><h3><font color = "#cc0000">Por R$249,00</font></h3></font></p>
-          <p>4x de R$62,25</p>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <a href="">
-        <img src="imagens/produtos/pcgamer.jpg" alt="Fjords" style="width:100%">
-        <div class="caption">
-          <p><b>PC Gamer Intel Core 2 Duo</b></p>
-          <p><h3><font color = "#cc0000">Por R$1120,00</h3></font></p>
-          <p>10x de R$112,00</p>
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <a href="">
-        <img src="imagens/produtos/gta.png" alt="Lights" style="width:100%">
-        <div class="caption">
-          <p><b>Grand Theft Auto V XBox 360</b></p>
-          <p><h3><font color = "#cc0000">Por R$98,00</h3></font></p>
-          <p>10x de R$9,80</p>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <a href="">
-        <img src="imagens/produtos/battlefield.jpg" alt="Nature" style="width:100%">
-        <div class="caption">
-          <p><b>Battlefield 3 PS3 </b></p>
-          <p><h3><font color = "#cc0000">Por R$129,90</h3></font></p>
-          <p>10x de R$12,99</p>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <a href="">
-        <img src="imagens/produtos/dead.jpg" alt="Fjords" style="width:100%">
-        <div class="caption">
-          <p><b>Dead Rising 3 XBox ONE</b></p>
-          <p><h3><font color = "#cc0000">Por R$100,00</h3></font></p>
-          <p>10x de R$10,00</p>
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
-<nav class="navbar navbar-default">
-<div class="row">
-  <div class="col-md-5">
-   <p><b>ACEITAMOS OS CARTÕES</b></p>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-1">
-     <img src="imagens/logos/visa.jpg" height="40px" width="50px"></div>
-  <div class="col-md-1">
-     <img src="imagens/logos/mastercard.jpg" height="40px" width="50px"></div>
-  <div class="col-md-1">
-     <img src="imagens/logos/maestro.png" height="40px" width="50px"></div>
-  <div class="col-md-1">
-     <img src="imagens/logos/hipercard.png" height="40px" width="50px"></div>
-  <div class="col-md-1">
-     <img src="imagens/logos/bndes.jpg" height="40px" width="50px"></div>
-  <div class="col-md-1">
-     <img src="imagens/logos/americanexpress.png" height="40px" width="50px"></div>
-</div>
-<div class="row">
-  <div class="col-md-12">
-     <br><br>
-  	 <p><font color="#a6a6a6"><b>NOSSAS UNIDADES</b></font></p>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-3">
-     <a href="">SHOPPING VIA DIRETA</a>
-  </div>
-  <div class="col-md-3">
-  	 <a href="">SHOPPING CIDADE JARDIM</a>
-  </div>
-  <div class="col-md-3">
-  	 <a href="">SHOPPING MIDWAY MALL</a>
-  </div>
-  <div class="col-md-3">
-  	 <a href="">PARTAGE NORTE SHOPPING</a>
-  </div>
-</div>
-<div class="row">
-	<div class="col-md-3">
-	    Seg. a sex. 9h às 21h. | Sab. e Dom. Fechado.
-	</div>
-	<div class="col-md-3">
-		Seg. a sex. 9h às 21h. | Sab. e Dom. Fechado.
-	</div>
-	<div class="col-md-3">
-		Seg. a sex. 7h às 21h. | Sab. e Dom. Fechado.
-	</div>
-	<div class="col-md-3">
-		Seg. a sex. 10h às 21h. | Sab. e Dom. Fechado.
-	</div>
-</div>
-<div class="row">
-   <div class="col-md-3">
-      Tel/Fax: (84) 2014-3232
-   </div>
-   <div class="col-md-3">
-   	  Tel/Fax: (84) 2014-3232
-   </div>
-   <div class="col-md-3">
-   	  Tel/Fax: (84) 2014-3232
-   </div>
-   <div class="col-md-3">
-   	  Tel/Fax: (84) 2014-3232
-   </div>
-   <br><br><br>
-</div>
-<nav class="navbar navbar-inverse">
-<div class="row">
-	<div class="col-md-1">
-		<center><a href="">Apresentação</a></center>
-	</div>
-	<div class="col-md-2">
-	    <center><a href="">Nossas Lojas</a></center>
-	</div>
-	<div class="col-md-1">
-        <center><a href="">Informações</a></center>
-	</div>
-	<div class="col-md-2">
-		<center><a href="">Trabalhe na </a></center>
-	</div>
-	<div class="col-md-2">
-	   <center><a href="">Assistência Técnica</a></center>
-	</div>
-</div>
+    <!-- /.container -->
 
- </body><!-- =============================================================== -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
 
 </html>
